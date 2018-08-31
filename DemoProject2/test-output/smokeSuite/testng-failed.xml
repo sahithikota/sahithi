@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [smokeSuite]">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="fullregression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="demo.pack.DemoProject2.TC_001">
+        <methods>
+          <include name="bangar"/>
+        </methods>
+      </class> <!-- demo.pack.DemoProject2.TC_001 -->
+      <class name="demo.pack.DemoProject2.TC_002">
+        <methods>
+          <include name="ramu"/>
+        </methods>
+      </class> <!-- demo.pack.DemoProject2.TC_002 -->
+      <class name="demo.pack.DemoProject2.BrowserLaunch">
+        <methods>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- demo.pack.DemoProject2.BrowserLaunch -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [smokeSuite] -->
