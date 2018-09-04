@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smokeSuite">
+
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+  <groups>
+	    <run>
+			<include name="sanity" />
+	    </run>
+	</groups>
+      <classes>
+      <class name="demo.pack.DemoProject2.TC_001"/>
+      <class name="demo.pack.DemoProject2.TC_002"/>
+      <class name="demo.pack.DemoProject2.BrowserLaunch"/>
+    </classes>
+  </test> <!-- smokeTest -->
+  
+  
+</suite> <!-- smokeSuite -->

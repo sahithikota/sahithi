@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30472" started-at="2018-09-04T11:13:32Z" finished-at="2018-09-04T11:14:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30472" started-at="2018-09-04T11:13:32Z" finished-at="2018-09-04T11:14:02Z">
+      <class name="demo.pack.DemoProject2.TC_003">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:demo.pack.DemoProject2.TC_003@670b40af]" name="startProcess" is-config="true" duration-ms="13578" started-at="2018-09-04T11:13:32Z" finished-at="2018-09-04T11:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="registration()[pri:0, instance:demo.pack.DemoProject2.TC_003@670b40af]" name="registration" duration-ms="16857" started-at="2018-09-04T11:13:46Z" finished-at="2018-09-04T11:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:demo.pack.DemoProject2.TC_003@670b40af]" name="endProcess" is-config="true" duration-ms="1" started-at="2018-09-04T11:14:02Z" finished-at="2018-09-04T11:14:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- demo.pack.DemoProject2.TC_003 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
