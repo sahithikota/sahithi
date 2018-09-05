@@ -67,16 +67,17 @@ public class LoginPageUI extends BasePage
 		regName.sendKeys(getData("fname")+ getData("lname")+randomNumber()+getData("domain"));
 		System.out.println(regName.getAttribute("value"));
 		SubmitCreate.click();
+		
+		waitElement(20, male,"clickable");
 		male.click();
 		firstName.sendKeys(getData("fname"));
 		lastName.sendKeys(getData("lname"));
 		passwd.sendKeys(getData("pass"));
-		day.sendKeys("12");
-		month.sendKeys("October");
-		year.sendKeys("1986");
-		
-		Thread.sleep(7000);
-		
+			
+		selectOption(day, 3);
+		selectOption(month, 4);
+		selectOption(year, 5);
+			
 		address.sendKeys("kukatpally");
 		city.sendKeys("hyderabad");
 		state.sendKeys("Alabamas");

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30472" started-at="2018-09-04T11:13:32Z" finished-at="2018-09-04T11:14:02Z">
+  <suite name="Default suite" duration-ms="41667" started-at="2018-09-05T11:23:40Z" finished-at="2018-09-05T11:24:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30472" started-at="2018-09-04T11:13:32Z" finished-at="2018-09-04T11:14:02Z">
+    <test name="Default test" duration-ms="41667" started-at="2018-09-05T11:23:40Z" finished-at="2018-09-05T11:24:22Z">
       <class name="demo.pack.DemoProject2.TC_003">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:demo.pack.DemoProject2.TC_003@670b40af]" name="startProcess" is-config="true" duration-ms="13578" started-at="2018-09-04T11:13:32Z" finished-at="2018-09-04T11:13:46Z">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:demo.pack.DemoProject2.TC_003@7a3d45bd]" name="startProcess" is-config="true" duration-ms="30380" started-at="2018-09-05T11:23:40Z" finished-at="2018-09-05T11:24:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="registration()[pri:0, instance:demo.pack.DemoProject2.TC_003@670b40af]" name="registration" duration-ms="16857" started-at="2018-09-04T11:13:46Z" finished-at="2018-09-04T11:14:02Z">
+        <test-method status="PASS" signature="registration()[pri:0, instance:demo.pack.DemoProject2.TC_003@7a3d45bd]" name="registration" duration-ms="11265" started-at="2018-09-05T11:24:10Z" finished-at="2018-09-05T11:24:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:demo.pack.DemoProject2.TC_003@670b40af]" name="endProcess" is-config="true" duration-ms="1" started-at="2018-09-04T11:14:02Z" finished-at="2018-09-04T11:14:02Z">
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:demo.pack.DemoProject2.TC_003@7a3d45bd]" name="endProcess" is-config="true" duration-ms="1" started-at="2018-09-05T11:24:22Z" finished-at="2018-09-05T11:24:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endProcess -->

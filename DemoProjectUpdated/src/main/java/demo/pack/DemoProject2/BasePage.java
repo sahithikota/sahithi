@@ -2,22 +2,24 @@ package demo.pack.DemoProject2;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage 
 {
 	
 	public static WebDriver driver;
 	public static String path="./commondata.properties";
+	public static WebDriverWait wait;
 	
 	public static String getData(String key) throws Exception
 	{
@@ -33,6 +35,29 @@ public class BasePage
 	{
 		Random r=new Random();
 		return r.nextInt(9999);
+	}
+	
+	public static void selectOption(WebElement element, int index)
+	{
+		Select s=new Select(element);
+		s.selectByIndex(index);
+	}
+	
+	
+	public static void waitElement(int timeUnits,WebElement element,String waitType)
+	{
+		if(waitType.equals("clickable"))
+		{
+			wait=new WebDriverWait(driver, timeUnits);
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+		}
+		else if(waitType.equals("visible"))
+		{
+			wait=new WebDriverWait(driver, timeUnits);
+			wait.until(ExpectedConditions.visibilityOf(element));
+		}
+		
+				
 	}
 	
 	public static void browserLaunch(String browser, String url)
@@ -56,7 +81,7 @@ public class BasePage
 		
 		driver.navigate().to(url);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 
 }
